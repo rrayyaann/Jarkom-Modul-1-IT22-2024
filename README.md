@@ -39,12 +39,9 @@ Flag
 ### `Pegawai Negeri Sebelah`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
-3. Bisa memilih dibagian atas pada bagian analyze - TCP Stream
-4. Pada stream 3 berisi (username)
-5. Pada stream 4 berisi (string)
-6. Peraturan Soal Shift jarkom, di decode ke teks menggunakan base64
-7. String (penword)
-8. Berhasil menemukan flag
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Terus follow TCP stream
+5. Berhasil menemukan flag
 
 <img width="1500" alt="image" src="https://github.com/user-attachments/assets/bae7616b-b46e-454e-a29e-95e269c5a973">
 
@@ -59,3 +56,94 @@ Flag
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/6f1e8c9b-e0a9-4b9f-b118-c0db4da22009">
 
 </details>
+
+### `EZ`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Terus follow TCP stream
+5. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/f1803e60-bd39-4122-a122-59e75c59dc3e">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/b9448c48-4433-463a-ae15-27381127b93d">
+
+Flag
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/6ce53b60-8caf-4028-bfb1-d658150a71c2">
+
+</details>
+
+### `FTP Login`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Terus follow TCP stream
+5. Lalu filter di stream sampe menemukan user benar
+6. Begitu juga dengan password nya
+7. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/3510d81b-6a83-427a-ae8e-bbd161fba5e8">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/3894f5c5-562f-41e2-99a7-2977edfd20ee">
+
+Flag
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/6f85bcab-2e88-408a-aee8-cdbf865667ad">
+
+</details>
+
+### `Corporate Breach`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Terus follow TCP stream
+5. Lalu filter di stream sampe menemukan user benar
+6. Begitu juga dengan email dan password nya
+7. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/007ed4f0-21c2-426d-84a7-ff04531d8070">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/80b64704-0727-4733-89c9-0a51fae63120">
+
+Flag
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/fffe7ff7-0ead-4e4b-bb2b-ea2a6ec2dc9b">
+
+</details>
+
+### `Corporate Breach`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Terus follow TCP stream
+5. Lalu filter di stream sampe menemukan user benar
+6. Begitu juga dengan email dan password nya
+7. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/007ed4f0-21c2-426d-84a7-ff04531d8070">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/80b64704-0727-4733-89c9-0a51fae63120">
+
+Flag
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/fffe7ff7-0ead-4e4b-bb2b-ea2a6ec2dc9b">
+
+</details>
+
