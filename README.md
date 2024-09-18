@@ -11,7 +11,7 @@ Laporan resmi ini dibuat terkait dengan praktikum modul 1 jaringan komputer yang
 
 ## Write Up
 
-### `Advance Sanity Check`
+### `1. Advance Sanity Check`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
 3. Bisa memilih dibagian atas pada bagian analyze - TCP Stream
@@ -30,13 +30,13 @@ Laporan resmi ini dibuat terkait dengan praktikum modul 1 jaringan komputer yang
 Wireshark
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/1d73b78b-6b21-4f8a-93ee-041ec8660652">
 
-Flag
+NC
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/daaab6f8-b3f7-452c-840a-1a1016e101f3">
 
 </details>
 
 
-### `Pegawai Negeri Sebelah`
+### `2. Pegawai Negeri Sebelah`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
 3. Bisa memilih dibagian atas pada bagian analyze
@@ -52,12 +52,12 @@ Flag
 Wireshark
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/200ce4f0-ef13-45c4-88ae-fa7eec3736c2">
 
-Flag
+NC
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/6f1e8c9b-e0a9-4b9f-b118-c0db4da22009">
 
 </details>
 
-### `EZ`
+### `3. EZ`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
 3. Bisa memilih dibagian atas pada bagian analyze
@@ -73,12 +73,41 @@ Flag
 Wireshark
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/b9448c48-4433-463a-ae15-27381127b93d">
 
-Flag
+NC
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/6ce53b60-8caf-4028-bfb1-d658150a71c2">
 
 </details>
 
-### `FTP Login`
+### `4. Rizzset`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Bisa di filter di stream dengan dns
+5. Terus pantau yang memiliki IP DNS
+6. Terus follow TCP stream
+7. Begitu juga dengan IP dan dns query nya
+8. Lalu git clone jarm untuk mendapatkan kode jarm
+9. lalu bisa denga command `python jarm.py its.ac.id`
+10. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/9e386d36-9cbb-4e34-b24c-56ce2c0c898a">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/9a8519c3-0006-4827-b3fd-4961cb9e46dc">
+
+Jarm
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/e6a47b04-26f3-44f0-b010-22c962f8541d">
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/5fec6c40-0d17-4ab8-9568-dfa98df87b31">
+
+</details>
+
+### `5. FTP Login`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
 3. Bisa memilih dibagian atas pada bagian analyze
@@ -96,12 +125,86 @@ Flag
 Wireshark
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/3894f5c5-562f-41e2-99a7-2977edfd20ee">
 
-Flag
+NC
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/6f85bcab-2e88-408a-aee8-cdbf865667ad">
 
 </details>
 
-### `Corporate Breach`
+### `6. Surprise`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Bisa di filter di stream dengan mencari yang sesuai diminta pada nc terminal
+5. Terus cari service dan saya menemukan `vsFTPd 3.0.3`
+6. Lalu cari didalamnya yang mengandung sebuah file `g0tcha.cpp`
+7. Decode sebuah kode agar menjadi sebuah pesan
+8. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/669e4661-1bf8-4a0b-86d8-d170b4683fbb">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/f7c56585-f798-4173-9217-4764a8f7bcd0">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/ad5ca73a-0fde-4647-a3c6-28679d843a81">
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/0f74d503-8ff4-4a64-b5d5-ea61d1f1315b">
+
+</details>
+
+### `7. Illegal Breakthrough`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Bisa di filter di stream dengan dns
+5. Terus cari IP korban 
+6. Terus cari juga port 
+7. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/317e0ed6-eeda-4125-a841-4b1a60e4ebe2">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/c15fd7a0-5c81-4e8b-b72f-b5ee3f6f5508">
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/c6e438fc-fe02-441e-95b5-0bb74c3e0201">
+
+</details>
+
+### `8. Packets Barrage`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Bisa di filter di stream dengan dns
+5. Terus cari IP attacker
+6. Terus cari juga port
+7. Lalu Export file to HTTP
+8. Setelah itu cari file pesan disini saya menemuka `Albatros.txt`
+9. Kemudian buka filenya dan lihat isinya lalu masukan ke terminal
+10. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/7becfeb4-0bbc-4495-8658-712fd537b618">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/c15fd7a0-5c81-4e8b-b72f-b5ee3f6f5508">
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/3c125f26-27c9-4aff-96f4-1b19dfe95527">
+
+</details>
+
+### `9. Corporate Breach`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
 3. Bisa memilih dibagian atas pada bagian analyze
@@ -119,31 +222,47 @@ Flag
 Wireshark
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/80b64704-0727-4733-89c9-0a51fae63120">
 
-Flag
+NC
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/fffe7ff7-0ead-4e4b-bb2b-ea2a6ec2dc9b">
 
 </details>
 
-### `Corporate Breach`
+### `10. Malicious Code`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
-3. Bisa memilih dibagian atas pada bagian analyze
-4. Terus follow TCP stream
-5. Lalu filter di stream sampe menemukan user benar
-6. Begitu juga dengan email dan password nya
-7. Berhasil menemukan flag
+3. Bisa memilih dibagian atas pada bagian analyze'
+4. Setelah itu total semua stream nya ada 222
+5. Bisa di filter `http.request.method == "GET"`
+6. Terus ada berapa stream untuk GET disini dapat dilihat pada `stream 52`
+7. Terus cari endpoint keberapa hacker berhasil login
+8. Lalu hacker melakukan bruteforce dan berhasil mendapatkan email dan password pada `stream 54`
+9. setelah itu kita kembali ke soal `Corporate Breach` kita menemukan email dan password jarkom pada stream 
+10. Ditemukan pada stream 207 yang berisikan email
+11. Lalu untuk mengetahui attempt berapa hacker mengetahui email dan password dengan cara `222-207 = 15` setelah itu `222-15-54 = 153`
+12. Nah Pada attempt ke stream 153 attacker menemukan email dan password yang benar
+13. Setelah itu pada `stream 221` ada pesan dari hacker, akan tetapi kita perlu mendecode kode yang diberikan agar menjadi sebuah teks
+14. Setelah dienkripsi kita bisa mengetahui pesannya, dan kita disuruh untuk memberikan jawaban untuk menjawab pertanyaannya
+15. Berhasil menemukan flag
 
-<img width="1500" alt="image" src="https://github.com/user-attachments/assets/007ed4f0-21c2-426d-84a7-ff04531d8070">
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/1e124863-66c5-4fa4-95de-1f8e06b9e365">
 
 <details>
 
 <summary>Detail Gambar</summary>
 
 Wireshark
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/80b64704-0727-4733-89c9-0a51fae63120">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/c508da18-cf20-49b5-8a28-4f2d4878acb3">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/3f28c90c-f840-42f8-87d7-5ef35bce6c6f">
+Stream 54
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/b0c8fa9b-741e-4ef7-8b8c-e7e1a187c859">
+Stream 207
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/0eb67fd0-257b-4595-88ef-8bd93597e095">
+Stream 221
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/0858458c-aab7-4341-97f1-6275e0ff6c42">
 
-Flag
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/fffe7ff7-0ead-4e4b-bb2b-ea2a6ec2dc9b">
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/d3104820-0af0-4950-a354-ae8d832b95ed">
 
 </details>
+
 
