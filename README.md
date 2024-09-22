@@ -1,4 +1,4 @@
-# Pratikum Jarkom-Modul-1-IT22-2024
+![image](https://github.com/user-attachments/assets/ba82ece3-fbd9-42cd-9e68-51567bdd9d2e)# Pratikum Jarkom-Modul-1-IT22-2024
 
 **KELOMPOK IT22**
 | Nama | NRP |
@@ -265,4 +265,31 @@ NC
 
 </details>
 
+### `11. Simnba`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. service seperti TCP, MDNS, dan ARP, jawaban yang benar adalah pada "SMB"
+4. Saya mulai memfilter service untuk tertuju pada SMB
+5. Lalu mencari nama pada bagian `User: spooky.domain\..`
+6. Sehingga saya menemukan nama user "mmeyers"
+7. Save file menggunakan langkah Export Objects > SMB
+8. Setelah itu menghitung banyaknya file yang tertampil, tetapi dengan mengesampingkan yang memiliki size 0 bytes, hasilnya adalah 14 
+9. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/c08ba289-b0ea-464f-a4bb-a54acc70bc65">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/8754341e-6619-4ab6-8afb-867ce31fb159">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/fd6ae21a-a4f1-4ba3-9cbb-ab6824e360dd">
+
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/bf96ba10-d005-41a5-898d-f50c2fc0dc56">
+
+
+</details>
 
