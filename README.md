@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ba82ece3-fbd9-42cd-9e68-51567bdd9d2e)# Pratikum Jarkom-Modul-1-IT22-2024
+# Pratikum Jarkom-Modul-1-IT22-2024
 
 **KELOMPOK IT22**
 | Nama | NRP |
