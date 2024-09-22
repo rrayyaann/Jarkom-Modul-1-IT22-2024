@@ -268,7 +268,7 @@ NC
 ### `11. Simnba`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
-3. service seperti TCP, MDNS, dan ARP, jawaban yang benar adalah pada "SMB"
+3. Kita cari service seperti TCP, MDNS, dan ARP, jawaban yang benar adalah pada "SMB"
 4. Saya mulai memfilter service untuk tertuju pada SMB
 5. Lalu mencari nama pada bagian `User: spooky.domain\..`
 6. Sehingga saya menemukan nama user "mmeyers"
@@ -290,6 +290,59 @@ Wireshark
 NC
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/bf96ba10-d005-41a5-898d-f50c2fc0dc56">
 
+</details>
+
+### `12. inneRCE`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Temukan idzoyyshell.php pada stream 27 kemudian jamnya ditambah 7
+4. Setelah itu Bruteforce hingga stream 55 (menemukan server-app)
+5. Lalu mencari file yang diupload dan menemukan filenya yaitu `idzoyyshell.php`
+6. Ada pada stream 49 bakuls, perhatikan line `whoami` paling atas
+7. Dan cari lagi pada stream 52 kita menemukan sebuah code. lalu kita decode menggunakan base64
+8. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/3a8ca125-46af-41f1-8b62-e72f4551c973">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/223787b5-6d6a-43f3-9b4d-85410e96978f">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/b4df06fb-5abf-4157-a542-a3466685517b">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/8095a31f-4200-4240-98cc-49faa3a3cb8b">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/be0642c2-6ec1-440d-b8c2-9f93f9a863e3">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/e29f81e3-e043-4f69-b83a-22c85ccd2aac">
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/d7090301-db36-497f-85d7-4dfadad2f945">
 
 </details>
 
+### `13. 22 Nightmare`
+1. Download file package yang sudah disediakan
+2. Setelah itu buka package tadi di wireshark
+3. Bisa memilih dibagian atas pada bagian analyze
+4. Terus follow TCP stream terus cari distream dan menemukan `Sh1k4.jpg`
+5. Terus save file menggunakan langkah Export Objects > FTP-DATA
+6. Filter dengan `frame contains "noko.py"` (karena sempat terlihat pada saat download)
+7. Buka file py, copas binernya, masukkan ke decryptor pakai kunci biner NUN yang diubah ke biner
+8. Setelah itu decrypt ke text
+9. Berhasil menemukan flag
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/fc3bb684-3882-4b4f-8ef4-0f4260b94f62">
+
+<details>
+
+<summary>Detail Gambar</summary>
+
+Wireshark
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/a5ab908d-1617-4441-b828-f4941888c690">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/c072eaf6-41b3-4816-853a-977ebcc3e8e6">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/f9157f65-c2f2-48ca-9bcc-dcfd54eb86c1">
+
+NC
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/e46c8f77-03ab-47d7-81cd-5bb1bb94cb35">
+
+</details>
