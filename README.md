@@ -1,4 +1,4 @@
-# Pratikum Jarkom-Modul-1-IT22-2024
+# Lapres Pratikum Jarkom-Modul-1-IT22-2024
 
 **KELOMPOK IT22**
 | Nama | NRP |
@@ -265,7 +265,7 @@ NC
 
 </details>
 
-### `11. Simnba`
+### `11. Simba`
 1. Download file package yang sudah disediakan
 2. Setelah itu buka package tadi di wireshark
 3. Kita cari service seperti TCP, MDNS, dan ARP, jawaban yang benar adalah pada "SMB"
