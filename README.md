@@ -4,7 +4,7 @@
 | Nama | NRP |
 |---------------------------|------------|
 |Muhamad Arrayyan | 5027231014 |
-|Fadlillah Cantika Sari Hermawan | 5027231042 |
+|Fadlillah Cantika Sari Hermawan ❌| 5027231042 |
 
 ## Pengantar
 Laporan resmi ini dibuat terkait dengan praktikum modul 1 jaringan komputer yang telah dilaksanakan pada tanggal 18 September 2024 hingga tanggal 19 September 2024. Praktikum modul 1 terdiri dari 20 soal yang dikerjakan dan diselesaikan dalam bentuk CTF.
